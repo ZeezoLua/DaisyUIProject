@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="errorDiv" role="alert" class="alert alert-error fixed z-40 hidden sm:mt-0 md:mt-0 lg:mt-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 shrink-0 stroke-current"
+          fill="none"
+          viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>Error! Don't decline the cookies bud.</span>
+        <div>
+            <button onclick="closeAlert()" class="btn btn-sm btn-ghost">Close</button>
+          </div>
+      </div>
+    <div class="navbar bg-base-100 flex align-center justify-center">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">The Big Bez</a>
+        </div>
+        <div id="navbar-links" class="lg:flex hidden items-center justify-center mr-20 w-[100%]">
+            <ul class="flex flex-row gap-5 text-lg">
+                <li><a href="">Home</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Create</a></li>
+            </ul>
+        </div>
+        <div class="flex-none">
+            <div class="lg:hidden drawer drawer-end">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer" class="btn btn-primary drawer-button btn-ghost"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block h-5 w-5 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                            </path>
+                        </svg></label>
+                </div>
+                <div class="drawer-side z-50">
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-base-200 text-base-content min-h-full w-60 p-4">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Games</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Create</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alertthing" role="alert" class="alert fixed bg-neutral mt-10 z-30">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="stroke-info h-6 w-6 shrink-0">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>we use cookies for no reason.</span>
+        <div>
+          <button onclick="showAlert()" class="btn btn-sm">Deny</button>
+          <button onclick="closeCookies()" class="btn btn-sm">Accept</button>
+        </div>
+      </div>
+    <!-- hero thing -->
+    <div class="hero bg-base-200 min-h-[calc(100vh-64px)]">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Hi, Monkey</h1>
+                <p class="py-6">
+                    Maybe u come here to think this website serves a purpose.. But it doesn't. U here bc i do pro design
+                    thats all
+                </p>
+                <div class="form-control">
+                    <label class="label cursor-pointer">
+                        <span class="label-text">Red pill</span>
+                        <input type="radio" name="radio-10" class="radio checked:bg-red-500" checked="checked" />
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer">
+                        <span class="label-text">Blue pill</span>
+                        <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked="checked" />
+                    </label>
+                </div>
+                <h1>are u gae, if yes then how much gay is u</h1>
+                <input type="range" min="0" max="100" value="25" class="range mt-5" />
+                <div class="mt-5 flex w-full justify-between px-2 text-xs">
+                    <span>NO GAY
+                        |</span>
+                    <span>KINDA GAY..
+                        |</span>
+                    <span>GAY
+                        |</span>
+                    <span>VERY GAY
+                        |</span>
+                    <span>INSANELY GAY (YUP)
+                        |</span>
+                </div>
+                <button class="mt-6 btn btn-accent btn-outline">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex w-full flex-col">
+        <div class="card bg-base-300 rounded-box grid h-20 place-items-center">Continue..?</div>
+        <div class="divider"></div>
+        <div class="card bg-base-300 rounded-box grid h-20 place-items-center text-primary"><a href="#">Go up again...</a></div>
+    </div>
+    <div class="mockup-code bg-base-300 border mt-40 flex-wrap">
+        <div class="bg-base-200 flex justify-center px-4 py-16">Bro why u continuing?? anyways here's some code that kicks a roblox player if hes black</div>
+        <pre data-prefix="$" class="mb-2.5 text-wrap"><code>if humanoid.SkinTone.Color == Color.new("Dark brown") then plr:Kick()</code></pre>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
